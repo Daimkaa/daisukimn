@@ -1,6 +1,16 @@
 import Head from 'next/head'
 import { CMS_NAME, HOME_OG_IMAGE_URL } from '../lib/constants'
 
+interface Props {
+  title: string
+  coverImage: {
+    node: {
+      sourceUrl: string
+    }
+  }
+  slug?: string
+}
+
 export default function Meta({coverImage}) {
   return (
     <Head>
