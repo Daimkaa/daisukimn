@@ -36,7 +36,7 @@ export default function Meta({coverImage}) {
         name="description"
         content={`A statically generated blog example using Next.js and ${CMS_NAME}.`}
       />
-      <meta property="og:image" content={coverImage} />
+      <meta property="og:image" content={coverImage?.node.sourceUrl} />
     </Head>
   )
 }
