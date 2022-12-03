@@ -11,12 +11,12 @@ export default function Home({ posts }) {
             <Main>
                 <div>
                     <h1>
-                        Alien
+                        Anciently
                     </h1>
                 </div>
 
                 <div className="post-div">
-                    <h2 style={{ marginBottom: "1rem" }}>Our latest news</h2>
+                    <h2 style={{ marginBottom: "1rem", textAlign: "center" }}>Home</h2>
                     <Grid>
                         {posts.map(({ node }) => {
                             return (
@@ -35,10 +35,16 @@ export default function Home({ posts }) {
                     style={{
                         display: "flex",
                         justifyContent: "center",
+                        padding: "10px 0",
                         paddingTop: "1rem",
+                        textTransform: "uppercase",
+                        borderRadius: "50px 50px 50px 50px",
+                        backgroundColor: "#000fa0",
+                        transition: "0.5s max-width ease",
+                        marginTop: "1rem",
                     }}
                 >
-                    <Link href="/blog">View all</Link>
+                    <Link href="/blog">See more</Link>
                 </div>
             </Main>
         </>
@@ -53,9 +59,10 @@ export async function getStaticProps() {
     };
 }
 
+
 const Main = styled("div")`
     width: 100%;
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 0 15px;
     .post-div {
@@ -65,7 +72,7 @@ const Main = styled("div")`
 
 const Grid = styled("div")`
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     @media (max-width: 768px) {
         grid-template-columns: 100%;
@@ -75,7 +82,7 @@ const Grid = styled("div")`
         flex-direction: column;
         justify-content: space-between;
         position: relative;
-        padding: 20px;
+        padding: 60px;
         background-color: #fff;
         background-clip: padding-box;
         border: solid 5px transparent;

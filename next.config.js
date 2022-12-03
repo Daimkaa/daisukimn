@@ -2,7 +2,7 @@
 const nextConfig = {
     reactStrictMode: true,
     images: {
-        domains: ["daisuki.mn", "localhost"],
+        domains: ["anomaliens.com", "localhost"],
     },
     trailingSlash: true,
     async redirects() {
@@ -14,7 +14,7 @@ const nextConfig = {
             key: 'referer',
             value: 'https://l.facebook.com(.*)',
         },],
-        destination: 'https://daisuki.mn/:path*',
+        destination: 'https://anomaliens.com/:path*',
         permanent: false,
       },
       {
@@ -24,7 +24,7 @@ const nextConfig = {
             key: 'referer',
             value: 'https://lm.facebook.com(.*)',
         },],
-        destination: 'https://daisuki.mn/:path*',
+        destination: 'https://anomaliens.com/:path*',
         permanent: false,
       },
       {
@@ -34,7 +34,7 @@ const nextConfig = {
             key: 'referer',
             value: 'https://m.facebook.com(.*)',
         },],
-        destination: 'https://daisuki.mn/:path*',
+        destination: 'https://anomaliens.com/:path*',
         permanent: false,
       },
       {
@@ -44,7 +44,7 @@ const nextConfig = {
             key: 'referer',
             value: 'http://m.facebook.com(.*)',
         },],
-        destination: 'https://daisuki.mn/:path*',
+        destination: 'https://anomaliens.com/:path*',
         permanent: false,
       },
     ]

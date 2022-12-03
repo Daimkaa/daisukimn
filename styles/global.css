@@ -4,3 +4,21 @@
     --responsive--alignwide-width: min(calc(100vw - 8 * var(--global--spacing-horizontal)), 1240px);
     --global--spacing-vertical: 30px;
 }
+a:link,
+a:visited,
+a:focus {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+    font-size:20px;
+    transition: all 600ms;
+    font-size-adjust: 20px;
+}
+
+a:active {
+  background: darkred;
+  color: white;
+  text-decoration: none;
+}
